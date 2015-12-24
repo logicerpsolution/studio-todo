@@ -23,10 +23,10 @@
                 "checked": {"<->": "@owner.task.completed"}
             }
         },
-        "textField": {
+        "tasksController": {
             "prototype": "digit/ui/text-field.reel",
             "properties": {
-                "element": {"#": "textField"},
+                "element": {"#": "tasksController"},
                 "placeholderValue": "Text"
             },
             "bindings": {
@@ -37,9 +37,9 @@
     </script>
 </head>
 <body>
-    <div data-montage-id="owner" class="TaskCell">
-        <input type="checkbox" data-montage-id="checkbox">
-        <input data-montage-id="textField" type="text">
+    <div class="TaskCell" data-montage-id="owner">
+        <input data-montage-id="checkbox" type="checkbox">
+        <input data-montage-id="tasksController" type="text">
     </div>
 </body>
 </html>
